@@ -1,0 +1,88 @@
+.container_flex {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_small_block {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.big_block {
+    display: flex;
+    background-color: gray;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 250px;
+}
+
+.small_blocks {
+    display: flex;
+    background-color: gray;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    width: 68px;
+    margin: 7px;
+}
+
+
+
+.menu {
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 450px;
+    margin: 10px;
+}
+
+.blocks {
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 250px;
+    margin: 5px;
+}
+
+.container_triple_blocks {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.america img{
+    height: 100px;
+}
+
+.america {
+    max-width: 250px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hr-multiline {
+    margin: 20px 0;
+    padding: 0;
+    height: 20px;
+    border: none;
+    color: #333;
+    background-image: linear-gradient(currentColor, currentColor 33.33%, transparent 33.33%, transparent 100%);
+    background-size: 100% 3px;
+}
+

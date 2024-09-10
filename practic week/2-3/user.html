@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет администратора</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <svg width="54" height="47" viewBox="0 0 54 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="1" width="44" height="44" rx="10" fill="#0FA9FF"/>
+            <line x1="10" y1="19" x2="10" y2="40" stroke="white" stroke-width="4"/>
+            <circle cx="10" cy="12" r="3" fill="white"/>
+            <path d="M17.1562 33.4375H24.0625C24.5625 37.9062 28.9062 40.8438 34.8438 40.8438C40.5312 40.8438 44.625 37.9062 44.625 33.875C44.625 30.375 42.1562 28.2812 36.3125 26.8438L30.4688 25.4375C22.1875 23.4375 18.3438 19.5625 18.3438 13.2812C18.3438 5.5 25.125 0.15625 34.75 0.15625C44.2812 0.15625 50.8125 5.5 51.0312 13.2812H44.2188C43.8125 8.78125 40.0938 6.0625 34.6562 6.0625C29.2188 6.0625 25.5 8.8125 25.5 12.8125C25.5 16 27.875 17.875 33.6875 19.3125L38.6562 20.5312C47.9062 22.7188 51.75 26.4375 51.75 33.0312C51.75 41.4688 45.0312 46.75 34.3438 46.75C24.3438 46.75 17.5938 41.5938 17.1562 33.4375Z" fill="white"/>
+        </svg>
+        <p class="logo-text">iSam store</p>
+    </div>
+    <ul>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">О нас</a></li>
+    </ul>
+    <div class="header-icons">
+        <a href="#"><img src="images/cart-icon.png" alt="Корзина"></a>
+        <a href="#"><img src="images/user-icon.png" alt="Профиль"></a>
+    </div>
+</nav>
+<div class="container">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Товары</a></li>
+            <li><a href="#">Пользователи онлайн</a></li>
+            <li><a href="#">Обращения</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Кабинет администратора</h1>
+        <div class="section">
+            <h2>Редактировать карточки товара</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Цена</th>
+                    <th>Количество</th>
+                    <th>Действия</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Товар 1</td>
+                    <td>1000 руб.</td>
+                    <td>50</td>
+                    <td><button>Редактировать</button> <button>Удалить</button></td>
+                </tr>
+                <tr>
+                    <td>Товар 2</td>
+                    <td>2000 руб.</td>
+                    <td>30</td>
+                    <td><button>Редактировать</button> <button>Удалить</button></td>
+                </tr>
+                <!-- Добавьте больше строк по мере необходимости -->
+                </tbody>
+            </table>
+        </div>
+        <div class="section">
+            <h2>Пользователи онлайн</h2>
+            <ul class="user-list">
+                <li>Пользователь 1</li>
+                <li>Пользователь 2</li>
+                <!-- Добавьте больше пользователей по мере необходимости -->
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Обращения за помощью</h2>
+            <ul class="help-requests">
+                <li>Пользователь 1: Вопрос по товару</li>
+                <li>Пользователь 2: Проблема с доставкой</li>
+                <!-- Добавьте больше обращений по мере необходимости -->
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

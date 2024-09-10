@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let productCard = document.getElementById("blocks");
+            let x = window.innerWidth / 2 - productCard.offsetWidth / 2;
+            let y = window.innerHeight / 2 - productCard.offsetHeight / 2;
+            productCard.style.left = x + "px";
+            productCard.style.top = y + "px";
+            document.addEventListener("keydown", function(event) {
+                let step = 20;
+                switch(event.key) {
+                    case "ArrowLeft":
+                        moveLeft(step);
+                        break;
+                    case "ArrowRight":
+                        moveRight(step);
+                        break;
+                    case "ArrowUp":
+                        moveUp(step);
+                        break;
+                    case "ArrowDown":
+                        moveDown(step);
+                        break;
+                }
+            });
+            function moveLeft(step) {
+                x -= step;
+                productCard.style.left = x + "px";
+            }
+
+            function moveRight(step) {
+                x += step;
+                productCard.style.left = x + "px";
+            }
+
+            function moveUp(step) {
+                y -= step;
+                productCard.style.top = y + "px";
+            }
+
+            function moveDown(step) {
+                y += step;
+                productCard.style.top = y + "px";
+            }
+        });
+    </script>
+    <title>Practical Adaptive</title>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="#header" class="active"><img class="logo" src="whitelogo.svg"/></a>
+    <a href="#item">Item</a>
+    <a href="#contact">Contact</a>
+    <a href="#sale">Sale</a>
+    <a href="#news">News</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<header id="header">
+    <div class="info">
+        <p>Магазин нижнего женского белья. Сошьем индивидуально под Ваши размеры.</p>
+    </div>
+    <div class="info-small-blocks">
+        <span class="small_blocks">
+            <p>Наши соц. сети:</p>
+            <a href="#"><img src="telegram.png"/></a>
+            <a href="#"><img src="vk.png"/></a>
+        </span>
+        <span class="small_blocks">
+            <p>Телефон:</p>
+            <a href="#">+70000000000</a>
+        </span>
+    </div>
+</header>
+<hr class="hr-multiline">
+<div class="item" id="item">
+    <div class="menu">ПРИМЕРЫ РАБОТ</div>
+</div>
+<div class="item" id="item">
+         <div class="blocks" id="blocks"> <img src="item6.jpg">
+             <p>
+                 Элегантное бюстье черного цвета с изысканными акцентами в виде красных маков. Чашечки из мягкого поролона,
+                 покрытые нежным кружевом, обеспечивают комфорт и поддержку
+             </p>
+             <p>
+                 Цена: 6000 рублей за комплект
+                 Бюстье отдельно: 4000 рублей
+                 Слипы отдельно: 2000 рублей
+             </p>
+         </div>
+         <div class="blocks" id="blocks"> <img src="item5.jpg">
+             <p>
+                 Бюстгальтер сшит с учетом потребностей большого размера. Чашечки трехслойные: бюстовый трикотаж, который обеспечивает стабильность, микрофибра и верхний слой из изысканного кружева – все это обеспечивает исключительную поддержку и комфорт. Широкая застежка и бретель гарантируют удобство на весь день
+             </p>
+             <p>
+                 Цена: 8000 рублей за комплект
+                 Бюстгальтер: 6000 рублей
+                 Трусики: 2000 рублей
+             </p>
+         </div>
+         <div class="blocks" id="blocks"> <img src="item4.jpg">
+             <p>
+                 Холтер выполнен из прозрачного кружева, что создает эффект «голого тела». Легкий и воздушный, он идеально облегает, подчеркивая природную красоту и формы тела без ощущения тяжести
+             </p>
+             <p>
+                 Цена: 5000 рублей за комплект
+                 Холтер: 3000 рублей
+                 Трусики: 2000 рублей
+             </p>
+         </div>
+         <div class="blocks" id="blocks"> <img src="item3.jpg">
+             <p>
+                 Элегантное бюстье черного цвета с изысканными акцентами в виде красных маков. Чашечки из мягкого поролона,
+                 покрытые нежным кружевом, обеспечивают комфорт и поддержку
+             </p>
+             <p>
+                 Цена: 6000 рублей за комплект
+                 Бюстье отдельно: 4000 рублей
+                 Слипы отдельно: 2000 рублей
+             </p>
+         </div>
+         <div class="blocks" id="blocks"> <img src="item2.jpg">
+             <p>
+                 Невероятно нежные цветочные комплекты! По запросу можно добавить пояс для чулок
+             </p>
+             <p>
+                 Цена: 4000 рублей за комплект
+                 Бюстгальтер: 2500 рублей
+                 Трусики: 1500 рублей
+             </p>
+         </div>
+         <div class="blocks"> <img src="item1.jpg">
+         <p>
+             Невероятно приятный к телу комплект из микрофибры и вышивки на сетке, выполненный на заказ. Укреплённые
+             бюстовым трикотажем чашки и широкие бретели обеспечивают хорошую поддержку груди и в то же время не бросаются в глаза. Трусики ощущаются, как вторая кожа, приятны к телу и комфортны в носке.
+            </p>
+             <p>
+                 Цена: 6000 рублей за комплект
+                 Бюстгальтер: 4500 рублей
+                 Трусики: 1500 рублей
+             </p>
+         </div>
+    </div>
+<footer>
+    Foooter here
+</footer>
+</body>
+</html>
